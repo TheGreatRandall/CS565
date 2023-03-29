@@ -1,0 +1,31 @@
+Title,Created At,URL
+[release 2.0.1] Fix type hint for torch.Tensor.grad_fn (#96804),2023-03-29T08:03:06Z,https://github.com/pytorch/pytorch/pull/97867
+do not need to check if element in dict input is Tensor.,2023-03-29T07:37:17Z,https://github.com/pytorch/pytorch/pull/97866
+[aot] fix disable amp for runtime wrapper,2023-03-29T06:32:54Z,https://github.com/pytorch/pytorch/pull/97864
+Revisit `torch._six.string_classes` removal (#94709),2023-03-29T06:26:32Z,https://github.com/pytorch/pytorch/pull/97863
+[Dynamo] Fix for tuple construction from tuple iterators,2023-03-29T06:19:22Z,https://github.com/pytorch/pytorch/pull/97862
+make TensorBase::data_ptr() return a const pointer,2023-03-29T06:03:35Z,https://github.com/pytorch/pytorch/pull/97860
+introduce TensorBase::mutable_data_ptr(),2023-03-29T06:03:29Z,https://github.com/pytorch/pytorch/pull/97859
+[MPS] Fix Clamp with strided outputs/inputs,2023-03-29T05:47:41Z,https://github.com/pytorch/pytorch/pull/97858
+[release 2.0.1] [fix] vmap: fix segfault on data access,2023-03-29T05:45:58Z,https://github.com/pytorch/pytorch/pull/97857
+[inductor] better heuristics found by coordesc,2023-03-29T04:42:10Z,https://github.com/pytorch/pytorch/pull/97855
+[SPMD] Support foreach optimizers with functionalization,2023-03-29T04:37:23Z,https://github.com/pytorch/pytorch/pull/97853
+"[ONNX] Fix typo ""scipt"" -> ""script""",2023-03-29T03:42:10Z,https://github.com/pytorch/pytorch/pull/97850
+"[WIP] _nested_view_from_buffer.cont, torch.cat([NTs], dim=0)",2023-03-29T01:48:59Z,https://github.com/pytorch/pytorch/pull/97846
+[dynamo] Remove special case for torch.nn methods,2023-03-29T01:43:56Z,https://github.com/pytorch/pytorch/pull/97845
+Remove comma from parametrized test name,2023-03-29T01:26:22Z,https://github.com/pytorch/pytorch/pull/97844
+Updates NCCL to 2.17.1,2023-03-29T01:13:47Z,https://github.com/pytorch/pytorch/pull/97843
+[inductor] Fix slow tests not being run in CI,2023-03-29T00:40:26Z,https://github.com/pytorch/pytorch/pull/97841
+Use the latest NVIDIA driver from setup-nvidia,2023-03-29T00:20:18Z,https://github.com/pytorch/pytorch/pull/97840
+[cuDNN][cuDNN V8 API] Fix incorrect use of `emplace` in the benchmark cache,2023-03-28T23:58:55Z,https://github.com/pytorch/pytorch/pull/97838
+add various NT ops needed for testing,2023-03-28T23:50:42Z,https://github.com/pytorch/pytorch/pull/97837
+[SPMD] Make compile cache the compilation result and add option to perform transformation,2023-03-28T23:49:34Z,https://github.com/pytorch/pytorch/pull/97836
+Check static inputs refs,2023-03-28T23:06:23Z,https://github.com/pytorch/pytorch/pull/97834
+"testing workflows 4, please ignore",2023-03-28T22:32:27Z,https://github.com/pytorch/pytorch/pull/97832
+Simplify by using yield from,2023-03-28T22:23:01Z,https://github.com/pytorch/pytorch/pull/97831
+Add config setting to error on recompile,2023-03-28T21:58:10Z,https://github.com/pytorch/pytorch/pull/97829
+[inductor] make `run_and_get_cpp_code` signature match `run_and_get_triton_code`,2023-03-28T21:31:41Z,https://github.com/pytorch/pytorch/pull/97826
+Support sparse COO/CSR/CSC/BSR/BSC return values in gradcheck input function,2023-03-28T21:30:42Z,https://github.com/pytorch/pytorch/pull/97825
+Fix issue with single input cat,2023-03-28T20:32:52Z,https://github.com/pytorch/pytorch/pull/97822
+Convert frozen check into hard error,2023-03-28T20:09:12Z,https://github.com/pytorch/pytorch/pull/97821
+Warn if guards are added to ShapeEnv after we produced guards,2023-03-28T20:05:40Z,https://github.com/pytorch/pytorch/pull/97820
