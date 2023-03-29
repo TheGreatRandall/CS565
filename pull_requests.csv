@@ -1,31 +1,31 @@
-Title,Created At,URL
-[release 2.0.1] Fix type hint for torch.Tensor.grad_fn (#96804),2023-03-29T08:03:06Z,https://github.com/pytorch/pytorch/pull/97867
-do not need to check if element in dict input is Tensor.,2023-03-29T07:37:17Z,https://github.com/pytorch/pytorch/pull/97866
-[aot] fix disable amp for runtime wrapper,2023-03-29T06:32:54Z,https://github.com/pytorch/pytorch/pull/97864
-Revisit `torch._six.string_classes` removal (#94709),2023-03-29T06:26:32Z,https://github.com/pytorch/pytorch/pull/97863
-[Dynamo] Fix for tuple construction from tuple iterators,2023-03-29T06:19:22Z,https://github.com/pytorch/pytorch/pull/97862
-make TensorBase::data_ptr() return a const pointer,2023-03-29T06:03:35Z,https://github.com/pytorch/pytorch/pull/97860
-introduce TensorBase::mutable_data_ptr(),2023-03-29T06:03:29Z,https://github.com/pytorch/pytorch/pull/97859
-[MPS] Fix Clamp with strided outputs/inputs,2023-03-29T05:47:41Z,https://github.com/pytorch/pytorch/pull/97858
-[release 2.0.1] [fix] vmap: fix segfault on data access,2023-03-29T05:45:58Z,https://github.com/pytorch/pytorch/pull/97857
-[inductor] better heuristics found by coordesc,2023-03-29T04:42:10Z,https://github.com/pytorch/pytorch/pull/97855
-[SPMD] Support foreach optimizers with functionalization,2023-03-29T04:37:23Z,https://github.com/pytorch/pytorch/pull/97853
-"[ONNX] Fix typo ""scipt"" -> ""script""",2023-03-29T03:42:10Z,https://github.com/pytorch/pytorch/pull/97850
-"[WIP] _nested_view_from_buffer.cont, torch.cat([NTs], dim=0)",2023-03-29T01:48:59Z,https://github.com/pytorch/pytorch/pull/97846
-[dynamo] Remove special case for torch.nn methods,2023-03-29T01:43:56Z,https://github.com/pytorch/pytorch/pull/97845
-Remove comma from parametrized test name,2023-03-29T01:26:22Z,https://github.com/pytorch/pytorch/pull/97844
-Updates NCCL to 2.17.1,2023-03-29T01:13:47Z,https://github.com/pytorch/pytorch/pull/97843
-[inductor] Fix slow tests not being run in CI,2023-03-29T00:40:26Z,https://github.com/pytorch/pytorch/pull/97841
-Use the latest NVIDIA driver from setup-nvidia,2023-03-29T00:20:18Z,https://github.com/pytorch/pytorch/pull/97840
-[cuDNN][cuDNN V8 API] Fix incorrect use of `emplace` in the benchmark cache,2023-03-28T23:58:55Z,https://github.com/pytorch/pytorch/pull/97838
-add various NT ops needed for testing,2023-03-28T23:50:42Z,https://github.com/pytorch/pytorch/pull/97837
-[SPMD] Make compile cache the compilation result and add option to perform transformation,2023-03-28T23:49:34Z,https://github.com/pytorch/pytorch/pull/97836
-Check static inputs refs,2023-03-28T23:06:23Z,https://github.com/pytorch/pytorch/pull/97834
-"testing workflows 4, please ignore",2023-03-28T22:32:27Z,https://github.com/pytorch/pytorch/pull/97832
-Simplify by using yield from,2023-03-28T22:23:01Z,https://github.com/pytorch/pytorch/pull/97831
-Add config setting to error on recompile,2023-03-28T21:58:10Z,https://github.com/pytorch/pytorch/pull/97829
-[inductor] make `run_and_get_cpp_code` signature match `run_and_get_triton_code`,2023-03-28T21:31:41Z,https://github.com/pytorch/pytorch/pull/97826
-Support sparse COO/CSR/CSC/BSR/BSC return values in gradcheck input function,2023-03-28T21:30:42Z,https://github.com/pytorch/pytorch/pull/97825
-Fix issue with single input cat,2023-03-28T20:32:52Z,https://github.com/pytorch/pytorch/pull/97822
-Convert frozen check into hard error,2023-03-28T20:09:12Z,https://github.com/pytorch/pytorch/pull/97821
-Warn if guards are added to ShapeEnv after we produced guards,2023-03-28T20:05:40Z,https://github.com/pytorch/pytorch/pull/97820
+Title,Created At,URL,Username
+Add unstable workflow to upload test stats,2023-03-29T22:07:01Z,https://github.com/pytorch/pytorch/pull/97918,clee2000
+[kineto] make input shape collection opt-in for on-demand tracing (#746),2023-03-29T22:05:32Z,https://github.com/pytorch/pytorch/pull/97917,chaekit
+[vmap] Fix index_select support when dim is negative,2023-03-29T22:02:42Z,https://github.com/pytorch/pytorch/pull/97916,zou3519
+Clean up duplicate function run_test.py,2023-03-29T21:41:00Z,https://github.com/pytorch/pytorch/pull/97914,clee2000
+Run the benchmark suite with dynamic batch only,2023-03-29T21:31:04Z,https://github.com/pytorch/pytorch/pull/97912,ezyang
+Skip test_cpp_wrapper on mac,2023-03-29T21:25:39Z,https://github.com/pytorch/pytorch/pull/97911,jansel
+[PyTorch] Optimize TupleType::annotation_str_impl for small tuples,2023-03-29T21:19:59Z,https://github.com/pytorch/pytorch/pull/97910,swolchok
+[release 2.0.1] [fix] jacrev and jacfwd : support non-tensor args again,2023-03-29T20:07:49Z,https://github.com/pytorch/pytorch/pull/97908,kshitij12345
+[Inductor] Remove fb custom ops dependency,2023-03-29T20:05:56Z,https://github.com/pytorch/pytorch/pull/97907,yanboliang
+[nccl] Remove lock for nccl collective launch for 2.0+,2023-03-29T19:28:49Z,https://github.com/pytorch/pytorch/pull/97904,xw285cornell
+Stop recursion on trivial replacement,2023-03-29T19:04:23Z,https://github.com/pytorch/pytorch/pull/97903,frost-intel
+[WIP][Don't Review Yet] Enable adam foreach in full train step tracing,2023-03-29T17:19:03Z,https://github.com/pytorch/pytorch/pull/97897,mrshenli
+Refactor TENSOR_MATCH guards to check dim (for NT support),2023-03-29T17:13:43Z,https://github.com/pytorch/pytorch/pull/97896,jbschlosser
+NT: Refactor for lazy computation of opt_sizes,2023-03-29T17:13:38Z,https://github.com/pytorch/pytorch/pull/97895,jbschlosser
+Fix unsupported divmod for SymInt,2023-03-29T17:04:05Z,https://github.com/pytorch/pytorch/pull/97893,nima10khodaveisi
+Fix for offsite_cvr_ios_dedicated_model,2023-03-29T16:52:37Z,https://github.com/pytorch/pytorch/pull/97891,wushirong
+Report module name and call hierarchy for dynamo_timed,2023-03-29T16:38:07Z,https://github.com/pytorch/pytorch/pull/97890,ezyang
+[dtensor] remove DeviceMesh typing hack guard type imports,2023-03-29T16:36:48Z,https://github.com/pytorch/pytorch/pull/97889,wanchaol
+[BE] Pass `-faligned-new` if supported by compiler,2023-03-29T15:52:16Z,https://github.com/pytorch/pytorch/pull/97887,malfet
+[v2.0.1] `GradScaler` recomputes `found_inf` before `optimizer.step`,2023-03-29T15:50:32Z,https://github.com/pytorch/pytorch/pull/97886,crcrpar
+[v2.0.1] Handle `grad_scale` and `found_inf` independently,2023-03-29T15:50:29Z,https://github.com/pytorch/pytorch/pull/97885,crcrpar
+Consistently report graph breaks in all situations,2023-03-29T14:56:36Z,https://github.com/pytorch/pytorch/pull/97884,ezyang
+fix compiler version detection on MacOS,2023-03-29T14:40:20Z,https://github.com/pytorch/pytorch/pull/97883,QiangZiBro
+[BE] Enable flake8-comprehension rule C417,2023-03-29T13:57:23Z,https://github.com/pytorch/pytorch/pull/97880,Skylion007
+Add shape function for `aten::cross_entropy_loss`,2023-03-29T10:44:43Z,https://github.com/pytorch/pytorch/pull/97875,vivekkhandelwal1
+introduce TensorBase::mutable_data_ptr<T>,2023-03-29T10:15:44Z,https://github.com/pytorch/pytorch/pull/97874,dagitses
+use elem in check uniformly,2023-03-29T10:15:35Z,https://github.com/pytorch/pytorch/pull/97873,dilililiwhy
+[MPS] Enable conditional indexing tests,2023-03-29T09:21:35Z,https://github.com/pytorch/pytorch/pull/97871,qqaatw
+Added round_with_scale_factor to python and tests,2023-03-29T09:03:20Z,https://github.com/pytorch/pytorch/pull/97869,vfdev-5
+Added round_with_scale_factor arg to ATen,2023-03-29T09:03:14Z,https://github.com/pytorch/pytorch/pull/97868,vfdev-5

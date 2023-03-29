@@ -10,6 +10,6 @@ pull_requests = response.json()
 
 with open('pull_requests.csv', mode='w', newline='') as file:
     writer = csv.writer(file)
-    writer.writerow(['Title', 'Created At', 'URL'])
+    writer.writerow(['Title', 'Created At', 'URL', 'Username'])
     for pr in pull_requests:
-        writer.writerow([pr['title'], pr['created_at'], pr['html_url']])
+        writer.writerow([pr['title'], pr['created_at'], pr['html_url'], pr['user']['login']])
