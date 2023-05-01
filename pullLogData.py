@@ -1,7 +1,7 @@
 import requests
 import csv
 
-url = 'https://api.github.com/repos/pytorch/pytorch/pulls'
+url = 'https://api.github.com/repos/pytorch/pytorch/pulls?per_page=200'
 owner = 'owner_name'
 repo = 'repository_name'
 
@@ -12,6 +12,5 @@ with open('pull_requests.csv', mode='w', newline='') as file:
     writer = csv.writer(file)
     writer.writerow(['Title', 'Created At', 'URL', 'Username'])
     for pr in pull_requests:
-        writer.writerow([pr['title'], pr['created_at'], pr['html_url'], pr['user']['login']])
-
-
+        writer.writerow([pr['title'], pr['created_at'],
+                        pr['html_url'], pr['user']['login']])

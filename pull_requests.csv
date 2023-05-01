@@ -1,31 +1,101 @@
 Title,Created At,URL,Username
-Add unstable workflow to upload test stats,2023-03-29T22:07:01Z,https://github.com/pytorch/pytorch/pull/97918,clee2000
-[kineto] make input shape collection opt-in for on-demand tracing (#746),2023-03-29T22:05:32Z,https://github.com/pytorch/pytorch/pull/97917,chaekit
-[vmap] Fix index_select support when dim is negative,2023-03-29T22:02:42Z,https://github.com/pytorch/pytorch/pull/97916,zou3519
-Clean up duplicate function run_test.py,2023-03-29T21:41:00Z,https://github.com/pytorch/pytorch/pull/97914,clee2000
-Run the benchmark suite with dynamic batch only,2023-03-29T21:31:04Z,https://github.com/pytorch/pytorch/pull/97912,ezyang
-Skip test_cpp_wrapper on mac,2023-03-29T21:25:39Z,https://github.com/pytorch/pytorch/pull/97911,jansel
-[PyTorch] Optimize TupleType::annotation_str_impl for small tuples,2023-03-29T21:19:59Z,https://github.com/pytorch/pytorch/pull/97910,swolchok
-[release 2.0.1] [fix] jacrev and jacfwd : support non-tensor args again,2023-03-29T20:07:49Z,https://github.com/pytorch/pytorch/pull/97908,kshitij12345
-[Inductor] Remove fb custom ops dependency,2023-03-29T20:05:56Z,https://github.com/pytorch/pytorch/pull/97907,yanboliang
-[nccl] Remove lock for nccl collective launch for 2.0+,2023-03-29T19:28:49Z,https://github.com/pytorch/pytorch/pull/97904,xw285cornell
-Stop recursion on trivial replacement,2023-03-29T19:04:23Z,https://github.com/pytorch/pytorch/pull/97903,frost-intel
-[WIP][Don't Review Yet] Enable adam foreach in full train step tracing,2023-03-29T17:19:03Z,https://github.com/pytorch/pytorch/pull/97897,mrshenli
-Refactor TENSOR_MATCH guards to check dim (for NT support),2023-03-29T17:13:43Z,https://github.com/pytorch/pytorch/pull/97896,jbschlosser
-NT: Refactor for lazy computation of opt_sizes,2023-03-29T17:13:38Z,https://github.com/pytorch/pytorch/pull/97895,jbschlosser
-Fix unsupported divmod for SymInt,2023-03-29T17:04:05Z,https://github.com/pytorch/pytorch/pull/97893,nima10khodaveisi
-Fix for offsite_cvr_ios_dedicated_model,2023-03-29T16:52:37Z,https://github.com/pytorch/pytorch/pull/97891,wushirong
-Report module name and call hierarchy for dynamo_timed,2023-03-29T16:38:07Z,https://github.com/pytorch/pytorch/pull/97890,ezyang
-[dtensor] remove DeviceMesh typing hack guard type imports,2023-03-29T16:36:48Z,https://github.com/pytorch/pytorch/pull/97889,wanchaol
-[BE] Pass `-faligned-new` if supported by compiler,2023-03-29T15:52:16Z,https://github.com/pytorch/pytorch/pull/97887,malfet
-[v2.0.1] `GradScaler` recomputes `found_inf` before `optimizer.step`,2023-03-29T15:50:32Z,https://github.com/pytorch/pytorch/pull/97886,crcrpar
-[v2.0.1] Handle `grad_scale` and `found_inf` independently,2023-03-29T15:50:29Z,https://github.com/pytorch/pytorch/pull/97885,crcrpar
-Consistently report graph breaks in all situations,2023-03-29T14:56:36Z,https://github.com/pytorch/pytorch/pull/97884,ezyang
-fix compiler version detection on MacOS,2023-03-29T14:40:20Z,https://github.com/pytorch/pytorch/pull/97883,QiangZiBro
-[BE] Enable flake8-comprehension rule C417,2023-03-29T13:57:23Z,https://github.com/pytorch/pytorch/pull/97880,Skylion007
-Add shape function for `aten::cross_entropy_loss`,2023-03-29T10:44:43Z,https://github.com/pytorch/pytorch/pull/97875,vivekkhandelwal1
-introduce TensorBase::mutable_data_ptr<T>,2023-03-29T10:15:44Z,https://github.com/pytorch/pytorch/pull/97874,dagitses
-use elem in check uniformly,2023-03-29T10:15:35Z,https://github.com/pytorch/pytorch/pull/97873,dilililiwhy
-[MPS] Enable conditional indexing tests,2023-03-29T09:21:35Z,https://github.com/pytorch/pytorch/pull/97871,qqaatw
-Added round_with_scale_factor to python and tests,2023-03-29T09:03:20Z,https://github.com/pytorch/pytorch/pull/97869,vfdev-5
-Added round_with_scale_factor arg to ATen,2023-03-29T09:03:14Z,https://github.com/pytorch/pytorch/pull/97868,vfdev-5
+Cache pretrained mobilenet_v2 model in Docker,2023-04-29T02:03:00Z,https://github.com/pytorch/pytorch/pull/100302,huydhn
+POC Minifier,2023-04-29T00:28:57Z,https://github.com/pytorch/pytorch/pull/100300,ezyang
+[ONNX] Refactor diagnose_call message_formatter signature,2023-04-29T00:25:01Z,https://github.com/pytorch/pytorch/pull/100299,BowenBao
+[dynamo] Graph break on a list referencing self,2023-04-28T23:58:30Z,https://github.com/pytorch/pytorch/pull/100296,anijain2305
+[MPS] Fix `layer_norm_backward_mps` key,2023-04-28T23:46:22Z,https://github.com/pytorch/pytorch/pull/100295,malfet
+"Back out ""[aarch64][tools/build_defs/third_party/fbcode_defs.bzl] Fix dep handling in cross-builds""",2023-04-28T23:33:27Z,https://github.com/pytorch/pytorch/pull/100294,donaldong
+[dynamo] Compile torchvision augmentations,2023-04-28T23:23:50Z,https://github.com/pytorch/pytorch/pull/100292,anijain2305
+Allow each fully_shard unit to cast foward inputs for mixed precision config,2023-04-28T22:07:09Z,https://github.com/pytorch/pytorch/pull/100290,zhaojuanmao
+Update testing aggregate data hash to account per workflow,2023-04-28T21:54:56Z,https://github.com/pytorch/pytorch/pull/100288,PaliC
+[cuDNN][cuDNN V8 frontend API] Clean up `time_sorted_plan` workaround for cuDNN v8 API,2023-04-28T21:53:07Z,https://github.com/pytorch/pytorch/pull/100287,eqy
+Add condition in @slowTest decorator,2023-04-28T21:42:32Z,https://github.com/pytorch/pytorch/pull/100286,clee2000
+[decomp] Bad accuracy for elu_backward,2023-04-28T21:31:35Z,https://github.com/pytorch/pytorch/pull/100284,anijain2305
+[quant][pt2] Add Conv + BN + ReLU fusion for prepare QAT,2023-04-28T21:31:18Z,https://github.com/pytorch/pytorch/pull/100283,andrewor14
+Ensure optimizer state references are cleared,2023-04-28T21:27:09Z,https://github.com/pytorch/pytorch/pull/100282,mlazos
+[dashboard] higher tolerance for AlbertForQuestionAnswering,2023-04-28T20:50:15Z,https://github.com/pytorch/pytorch/pull/100277,anijain2305
+[inductor] Remove redundant model copy when running with cpp_wrapper,2023-04-28T20:34:44Z,https://github.com/pytorch/pytorch/pull/100275,desertfire
+[quant][pt2] Improve prepare_qat Conv + BN numerics test,2023-04-28T19:38:41Z,https://github.com/pytorch/pytorch/pull/100271,andrewor14
+[WIP][JIT] prim::AddStatValue - mark schema as having side effects,2023-04-28T19:05:37Z,https://github.com/pytorch/pytorch/pull/100269,davidberard98
+Add --baseline option to benchmark runners,2023-04-28T18:30:36Z,https://github.com/pytorch/pytorch/pull/100266,jansel
+[ONNX] Add supported ops into test_fx_op_consistency - 1st batch,2023-04-28T18:25:56Z,https://github.com/pytorch/pytorch/pull/100265,titaiwangms
+Remove inline for format_size and fix build,2023-04-28T18:03:47Z,https://github.com/pytorch/pytorch/pull/100263,wqfish
+[CI] Use gcc-11 for inductor tests,2023-04-28T18:01:56Z,https://github.com/pytorch/pytorch/pull/100262,desertfire
+"[test, dynamo 3.11] test PR to get all 3.11 tests working",2023-04-28T17:57:15Z,https://github.com/pytorch/pytorch/pull/100261,williamwen42
+Ensure device arg is passed to test_transformers,2023-04-28T17:47:42Z,https://github.com/pytorch/pytorch/pull/100260,drisspg
+catching the correct exception,2023-04-28T17:30:20Z,https://github.com/pytorch/pytorch/pull/100259,nedelchev
+Fixing interpolate on uint8 unsqueezed 3D CL tensor,2023-04-28T17:19:10Z,https://github.com/pytorch/pytorch/pull/100258,vfdev-5
+Skip invalid grads in outplace foreachs' backward,2023-04-28T16:59:32Z,https://github.com/pytorch/pytorch/pull/100256,crcrpar
+Added the eval context manger which sets a module to evaluation mode,2023-04-28T16:55:40Z,https://github.com/pytorch/pytorch/pull/100255,TamirCohen
+[inductor] Change the default value of layout,2023-04-28T16:48:37Z,https://github.com/pytorch/pytorch/pull/100254,desertfire
+[ONNX] Add RemoveConstantInputStep to adapt torch inputs to ONNX inputs,2023-04-28T16:02:26Z,https://github.com/pytorch/pytorch/pull/100252,titaiwangms
+[WIP] Avoid using einsum for torch.cat DTensor propogation,2023-04-28T16:02:07Z,https://github.com/pytorch/pytorch/pull/100251,mrshenli
+[NOT FOR REVIEW] TEMP,2023-04-28T15:19:10Z,https://github.com/pytorch/pytorch/pull/100247,tugsbayasgalan
+fix missing-prototypes warnings in torch_cpu (Part 3) ,2023-04-28T14:41:32Z,https://github.com/pytorch/pytorch/pull/100245,cyyever
+[c10d] Figure out device to use for object collectives,2023-04-28T08:53:14Z,https://github.com/pytorch/pytorch/pull/100238,kwen2501
+Extend storage create for custom storageImpl,2023-04-28T08:43:44Z,https://github.com/pytorch/pytorch/pull/100237,fakeYan
+Update FBGEMM submodule,2023-04-28T08:24:45Z,https://github.com/pytorch/pytorch/pull/100236,DamianSzwichtenberg
+[Doc] Add sum reduction for CTCLoss,2023-04-28T07:52:23Z,https://github.com/pytorch/pytorch/pull/100235,isdanni
+add Half support for GroupNorm on CPU,2023-04-28T07:50:06Z,https://github.com/pytorch/pytorch/pull/100234,CaoE
+add function specializations for the case of parameters in BFloat16 data type,2023-04-28T07:49:53Z,https://github.com/pytorch/pytorch/pull/100233,CaoE
+fix TIMM mobilevit_s complier issue for dynamic CPU path,2023-04-28T04:21:20Z,https://github.com/pytorch/pytorch/pull/100230,XiaobingSuper
+"[WIP][JIT] isinstance(..., X) returns false if we can't understand X",2023-04-28T03:52:04Z,https://github.com/pytorch/pytorch/pull/100229,davidberard98
+"Revert ""Revert ""[jit] Add c++ stacktraces for jit::ErrorReport (#94842)"" (#95886)""",2023-04-28T03:51:54Z,https://github.com/pytorch/pytorch/pull/100228,davidberard98
+Fix comment error in TensorIterator.cpp,2023-04-28T03:41:18Z,https://github.com/pytorch/pytorch/pull/100227,yewentao256
+Refactor repro/minifier into CLI; add analyze,2023-04-28T03:11:55Z,https://github.com/pytorch/pytorch/pull/100226,ezyang
+[inductor] avoid zero division error for dropout,2023-04-28T01:48:10Z,https://github.com/pytorch/pytorch/pull/100222,Valentine233
+Remove torch checks from kernels,2023-04-28T00:50:32Z,https://github.com/pytorch/pytorch/pull/100221,drisspg
+[ONNX] Non-global diagnostic context,2023-04-27T23:57:25Z,https://github.com/pytorch/pytorch/pull/100219,BowenBao
+[functorch] make disable_proxy_modes_tracing work for map and cond,2023-04-27T23:45:29Z,https://github.com/pytorch/pytorch/pull/100218,ydwu4
+[replicate] support simpler device_id,2023-04-27T23:40:23Z,https://github.com/pytorch/pytorch/pull/100217,rohan-varma
+[replicate] input casting support,2023-04-27T23:15:59Z,https://github.com/pytorch/pytorch/pull/100216,rohan-varma
+[PG Wrapper] Add diff capability,2023-04-27T22:31:33Z,https://github.com/pytorch/pytorch/pull/100214,rohan-varma
+[distributed][sharded_tensor] Move local_shards check from ShardedTensorBase to ShardedTensor,2023-04-27T20:13:38Z,https://github.com/pytorch/pytorch/pull/100197,IvanKobzarev
+[WIP] enable cuda graphs support for flash attention with dropout,2023-04-27T19:48:32Z,https://github.com/pytorch/pytorch/pull/100196,ngimel
+Introduce aggressive merge to `CapabilityPartitioner`,2023-04-27T19:27:42Z,https://github.com/pytorch/pytorch/pull/100195,seanlatias
+Nvfuser submodule switch,2023-04-27T19:13:38Z,https://github.com/pytorch/pytorch/pull/100193,jjsjann123
+[ONNX] Bump ONNX to 1.14.0rc3,2023-04-27T19:07:13Z,https://github.com/pytorch/pytorch/pull/100192,abock
+[torch.profile] Turn on record shape by default,2023-04-27T18:22:54Z,https://github.com/pytorch/pytorch/pull/100186,xw285cornell
+Support expandable_segments:True in fbcode for caching allocator,2023-04-27T17:30:51Z,https://github.com/pytorch/pytorch/pull/100184,zdevito
+"[FSDP] Fix `use_orig_params=True`, CPU offload, `no_sync()`",2023-04-27T16:20:01Z,https://github.com/pytorch/pytorch/pull/100180,awgu
+Replace master with main in links and docs/conf.py,2023-04-27T16:01:20Z,https://github.com/pytorch/pytorch/pull/100176,svekars
+Script objects: indicate which methods are not implemented,2023-04-27T15:02:51Z,https://github.com/pytorch/pytorch/pull/100171,Luthaf
+unsafe_cast_function,2023-04-27T14:47:58Z,https://github.com/pytorch/pytorch/pull/100170,dagitses
+[wip][core][pruning] implement second matrx sparse for cusparselt,2023-04-27T14:38:36Z,https://github.com/pytorch/pytorch/pull/100169,jcaip
+Add missing conversion functions between half and float for ppc64le,2023-04-27T14:35:32Z,https://github.com/pytorch/pytorch/pull/100168,vinithakv
+Include yaml as PyTorch runtime dependency,2023-04-27T14:23:28Z,https://github.com/pytorch/pytorch/pull/100166,zou3519
+Publicly exposing torch.__config__.get_cpu_capability(),2023-04-27T12:59:52Z,https://github.com/pytorch/pytorch/pull/100164,vfdev-5
+[c10d] make ProcessGroupNCCL work.wait() respect timeout,2023-04-27T11:03:05Z,https://github.com/pytorch/pytorch/pull/100162,cdzhan
+[dynamo] hasattr on TensorVariable,2023-04-27T07:08:33Z,https://github.com/pytorch/pytorch/pull/100154,anijain2305
+[OpInfo] Add multi_head_attention_forward,2023-04-27T06:42:10Z,https://github.com/pytorch/pytorch/pull/100153,qqaatw
+[functorch] test for compiling functorch transforms,2023-04-27T06:36:25Z,https://github.com/pytorch/pytorch/pull/100151,kshitij12345
+Remove vsx suffix in sleef calls,2023-04-27T04:55:12Z,https://github.com/pytorch/pytorch/pull/100149,nisanthmp
+graph break when calling resize_as_() on graph input,2023-04-27T04:40:17Z,https://github.com/pytorch/pytorch/pull/100148,blzheng
+Produce constant variables in cases where a SymNode is created with a constant,2023-04-27T02:43:14Z,https://github.com/pytorch/pytorch/pull/100144,voznesenskym
+refactor(add privateuseone floder in aten/src/ATen): add a PrivateUse¡­,2023-04-27T01:50:48Z,https://github.com/pytorch/pytorch/pull/100141,ykddd
+[PoC] Dynamo to emit nn.Module boundary metadata,2023-04-27T01:35:11Z,https://github.com/pytorch/pytorch/pull/100140,BowenBao
+Fix comment posting in check_labels.py,2023-04-27T00:44:29Z,https://github.com/pytorch/pytorch/pull/100139,kit1980
+[CI] Run test_multi_gpu in test_inductor_distributed,2023-04-26T23:33:45Z,https://github.com/pytorch/pytorch/pull/100135,desertfire
+[lite interpreter][hack] Add batch_norm_update_stats if batchnorm and training are present,2023-04-26T23:18:44Z,https://github.com/pytorch/pytorch/pull/100134,JacobSzwejbka
+[ROCm] Limiting the NUM_PROCS to 8 while UT testing,2023-04-26T23:00:46Z,https://github.com/pytorch/pytorch/pull/100133,pruthvistony
+[pt2] enable `svd` in `fake_tensor`,2023-04-26T22:54:48Z,https://github.com/pytorch/pytorch/pull/100130,nkaretnikov
+[dtensor] add debug tool to track op coverage,2023-04-26T21:07:11Z,https://github.com/pytorch/pytorch/pull/100124,wanchaol
+This adds append to Store and integrate with gloo,2023-04-26T19:34:45Z,https://github.com/pytorch/pytorch/pull/100119,kumpera
+"[inductor] fix incorrect strides in copy() decomp, fix hf_LongFormer + hf_BigBird errors",2023-04-26T18:55:21Z,https://github.com/pytorch/pytorch/pull/100115,bdhirsh
+Handle trailing masked column behavior for nested tensor,2023-04-26T18:27:11Z,https://github.com/pytorch/pytorch/pull/100113,mikekgfb
+Use a stable ordering for saved values in functorch.default_partition,2023-04-26T18:10:55Z,https://github.com/pytorch/pytorch/pull/100111,jamesr66a
+Add pattern to merge consecutive splits,2023-04-26T17:30:50Z,https://github.com/pytorch/pytorch/pull/100107,devashishshankar
+[MPS] Add dot input check,2023-04-26T15:30:52Z,https://github.com/pytorch/pytorch/pull/100099,qqaatw
+Pin lintrunner mypy to 1.2.0,2023-04-26T15:21:08Z,https://github.com/pytorch/pytorch/pull/100098,zou3519
+[WIP] Draft PR to get Arm64 Libtorch ,2023-04-26T14:51:46Z,https://github.com/pytorch/pytorch/pull/100094,iremyux
+ROCm fixes for PyT2.0,2023-04-26T13:40:05Z,https://github.com/pytorch/pytorch/pull/100089,jataylo
+Make 1D integer sorting work in parallel,2023-04-26T11:26:27Z,https://github.com/pytorch/pytorch/pull/100081,DamianSzwichtenberg
+[C++ API] Added round_with_scale_factor to interpolate,2023-04-26T08:16:56Z,https://github.com/pytorch/pytorch/pull/100079,vfdev-5
+[WIP] add tests to test data parallel  with non 0 batch dim,2023-04-26T06:25:52Z,https://github.com/pytorch/pytorch/pull/100073,wanchaol
+[spmd] add option to preserve node types,2023-04-26T06:25:48Z,https://github.com/pytorch/pytorch/pull/100072,wanchaol
+[dynamo][moco] Disallow_in_graph distributed APIs,2023-04-26T06:02:51Z,https://github.com/pytorch/pytorch/pull/100071,anijain2305
+[inductor] Vectorized RNG codegen,2023-04-26T04:47:02Z,https://github.com/pytorch/pytorch/pull/100064,jansel
+[c10d] Recover TCPStore timeout after wait,2023-04-26T03:00:11Z,https://github.com/pytorch/pytorch/pull/100056,xw285cornell
+Activate TracingContext earlier,2023-04-25T23:24:54Z,https://github.com/pytorch/pytorch/pull/100043,wconstab
+[DataPipe] Change DataPipe display name in profiler,2023-04-25T22:43:54Z,https://github.com/pytorch/pytorch/pull/100042,NivekT
+Use correct standard when compiling NVCC on Windows,2023-04-25T21:17:56Z,https://github.com/pytorch/pytorch/pull/100031,r-barnes
